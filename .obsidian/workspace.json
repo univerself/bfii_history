@@ -40,7 +40,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "c36451405fb31ed9",
@@ -138,6 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +178,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           },
           {
@@ -197,7 +202,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -216,13 +221,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "05e55cd96a8b71a1",
+  "active": "88c734b9ecb249fe",
   "lastOpenFiles": [
-    "src/notetypes/event.md",
     "notes/events/01 (2002)/bfii-01-2002.md",
+    "README.md",
+    "notes/bfii.md",
+    "src/notetypes/event.md",
     "src/notetemplates/fest.md",
     "src/notetypes/community.md",
-    "notes/bfii.md",
     "src/notetemplates/organization.md",
     "notes/persons/AVPetrov.md",
     "notes/places/irkregion/irkutsk/Irkutsk.md",
@@ -243,7 +249,6 @@
     "notes/places/irkregion",
     "notes/events/01 (2002)/01 БФИИ.md",
     "notes/events/01 (2002)",
-    "README.md",
     "notes/places/Siberia.md",
     "notes/places/East Siberia.md",
     "notes/places/Asia.md",
