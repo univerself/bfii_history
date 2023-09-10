@@ -19,22 +19,9 @@ tags:
 
 (type::[[Ночной клуб]]), существовавший в (ispartof::[[Irkutsk|Иркутске]]). Место проведения (event:: [[bfii-01-2002|первого Байкальского фестиваля интеллектуальных игр]]).
 
-## Персоналии
+## Фестивали
 
-```dataview 
-TABLE desc, birthdate, birthplace, deathdate
-FROM "notes/persons" 
-WHERE contains(cities, this.file.link)
-```
-
-## Команды
-
-```dataview 
-TABLE desc, birthdate, birthplace, deathdate
-FROM "notes/teams" 
-WHERE contains(cities, this.file.link)
-```
-
+1. [[bfii-01-2002|5 декабря  2002 года]]
 ## Справка и навигация
 
 Часть света: (continent::[[Asia|Азия]])
