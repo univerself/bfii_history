@@ -2,8 +2,8 @@
 <%*
 const fname = tp.file.title;
 const names = fname.split("-"); 
-const number = names[0];
-const year = names[1];
+const number = names[1];
+const year = names[2];
 %>
 aliases:
 - Энный Байкальский фестиваль интеллектуальных игр
@@ -49,7 +49,7 @@ tag:
 
 ## Участники и организаторы
 
-Участие в фестивале приняли (teamcount::33) команды из 3 городов (region::[[Irkutsk region|Иркутской области]])
+Участие в фестивале приняли (teamcount::) команды из городов (region::)
 [[#География участников]]
 
 ### Категории участников по возрасту и статусу
