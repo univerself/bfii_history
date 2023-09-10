@@ -17,5 +17,5 @@
   "enableSearch": true,
   "buttonIcon": "clipboard-list",
   "tableViewMaxRecords": 100,
-  "frontmatterListDisplay": "asArray"
+  "frontmatterListDisplay": "asList"
 }

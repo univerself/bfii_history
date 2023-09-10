@@ -1,5 +1,5 @@
 {
-  "commitMessage": "Заметки от {{date}}\n{{files}}",
+  "commitMessage": "От {{date}} #Область #Категория изменений",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
@@ -14,7 +14,7 @@
   "syncMethod": "merge",
   "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": false,
-  "treeStructure": false,
+  "treeStructure": true,
   "refreshSourceControl": true,
   "basePath": "",
   "differentIntervalCommitAndPush": false,
