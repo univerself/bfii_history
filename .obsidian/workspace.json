@@ -6,7 +6,7 @@
       {
         "id": "e6caf0480d12c217",
         "type": "tabs",
-        "dimension": 52.946273830155974,
+        "dimension": 57.27902946273831,
         "children": [
           {
             "id": "05e55cd96a8b71a1",
@@ -29,37 +29,25 @@
             }
           },
           {
-            "id": "50821b933a3bfcc1",
+            "id": "fd391daa670817e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/events/13 (2016)/bfii-13-2016.md",
+                "file": "src/notetemplates/fest.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "c36451405fb31ed9",
         "type": "tabs",
-        "dimension": 47.053726169844026,
+        "dimension": 42.7209705372617,
         "children": [
-          {
-            "id": "15eda832134bb381",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/bfii.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
           {
             "id": "2299abfcd1ffd9fd",
             "type": "leaf",
@@ -68,12 +56,11 @@
               "state": {
                 "file": "notes/events/13 (2016)/bfii-13-2016.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/events/13 (2016)/bfii-13-2016.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/events/13 (2016)/bfii-13-2016.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/events/13 (2016)/bfii-13-2016.md"
+                "file": "README.md"
               }
             }
           },
@@ -210,7 +197,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -229,18 +216,30 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2299abfcd1ffd9fd",
+  "active": "88c734b9ecb249fe",
   "lastOpenFiles": [
-    "notes/events/13 (2016)/bfii-13-2016.md",
-    "notes/places/irkregion/irkutsk/rasputin-lib.md",
     "src/notetemplates/fest.md",
-    "notes/places/irkregion/irkutsk/Object-01.md",
+    "notes/events/13 (2016)/bfii-13-2016.md",
+    "data/lu70284hf7bs.tmp",
+    "data/lu70284hf7bq.tmp",
+    "data/lu70284hf7bo.tmp",
+    "data/lu70284hf7bm.tmp",
+    "data/lu70284hf7bk.tmp",
+    "data/lu70284hf7bi.tmp",
+    "data/lu70284hf7bg.tmp",
+    "data/lu70284hf7be.tmp",
+    "data/lu70284hf7bc.tmp",
+    "data/lu70284hf7ba.tmp",
+    "chgk-13-2016.md",
+    "quartet-13-2016.md",
     "README.md",
+    "notes/bfii.md",
+    "notes/events/bfii.md",
+    "notes/places/irkregion/irkutsk/rasputin-lib.md",
+    "notes/places/irkregion/irkutsk/Object-01.md",
     "src/notetemplates/organization.md",
     "notes/events/01 (2002)/bfii-01-2002.md",
-    "notes/events/13 (2016)",
     "notes/events/01.md",
-    "notes/bfii.md",
     "src/notetypes/event.md",
     "src/notetypes/community.md",
     "notes/persons/AVPetrov.md",
@@ -250,22 +249,9 @@
     "src/notetypes/place.md",
     "notes/organizations/Alliance.md",
     "src/notetemplates/place.md",
-    "notes/organizations",
     "notes/places/irkregion/Usolje-Sibirskoe.md",
     "notes/places/irkregion/Irkutsk region.md",
     "notes/places/irkregion/Taishet.md",
-    "notes/places/irkregion/usolje.md",
-    "notes/events/01 (2002)/multigames-01-2002.md",
-    "notes/events/01 (2002)/brain-01-2002.md",
-    "notes/events/01 (2002)/chgk-01-2002.md",
-    "notes/places/irkregion",
-    "notes/events/01 (2002)/01 БФИИ.md",
-    "notes/events/01 (2002)",
-    "notes/places/irkregion/irkutsk",
-    "notes/persons",
-    "notes/places",
-    "notes/activities",
-    "notes/teams",
-    "notes/events"
+    "notes/places/irkregion/usolje.md"
   ]
 }
