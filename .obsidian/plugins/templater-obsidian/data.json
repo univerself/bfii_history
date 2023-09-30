@@ -25,6 +25,10 @@
     {
       "folder": "notes/persons",
       "template": "src/notetemplates/person.md"
+    },
+    {
+      "folder": "notes/teams",
+      "template": "src/notetemplates/team.md"
     }
   ],
   "syntax_highlighting": true,

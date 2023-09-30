@@ -34,14 +34,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/notetemplates/fest.md",
+                "file": "src/notetemplates/team.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "c36451405fb31ed9",
@@ -54,9 +54,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/events/13 (2016)/bfii-13-2016.md",
+                "file": "notes/teams/911.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "notes/teams/911.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "notes/teams/911.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "notes/teams/911.md"
               }
             }
           },
@@ -216,10 +216,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "88c734b9ecb249fe",
+  "active": "2299abfcd1ffd9fd",
   "lastOpenFiles": [
+    "notes/teams/911.md",
+    "src/notetemplates/team.md",
+    "src/notetypes/team.md",
+    "notes/teams/Состояние торгового счета (19 сентября 2023) (1).md",
+    "Команда.md",
+    "src/notetemplates/organization.md",
+    "src/notetemplates/person.md",
     "src/notetemplates/fest.md",
     "notes/events/13 (2016)/bfii-13-2016.md",
+    "src/notetemplates/911.md",
+    "911.md",
+    "README.md",
     "data/lu70284hf7bs.tmp",
     "data/lu70284hf7bq.tmp",
     "data/lu70284hf7bo.tmp",
@@ -232,26 +242,17 @@
     "data/lu70284hf7ba.tmp",
     "chgk-13-2016.md",
     "quartet-13-2016.md",
-    "README.md",
     "notes/bfii.md",
     "notes/events/bfii.md",
     "notes/places/irkregion/irkutsk/rasputin-lib.md",
     "notes/places/irkregion/irkutsk/Object-01.md",
-    "src/notetemplates/organization.md",
     "notes/events/01 (2002)/bfii-01-2002.md",
     "notes/events/01.md",
     "src/notetypes/event.md",
     "src/notetypes/community.md",
     "notes/persons/AVPetrov.md",
     "notes/places/irkregion/irkutsk/Irkutsk.md",
-    "src/notetemplates/person.md",
     "src/notetypes/person.md",
-    "src/notetypes/place.md",
-    "notes/organizations/Alliance.md",
-    "src/notetemplates/place.md",
-    "notes/places/irkregion/Usolje-Sibirskoe.md",
-    "notes/places/irkregion/Irkutsk region.md",
-    "notes/places/irkregion/Taishet.md",
-    "notes/places/irkregion/usolje.md"
+    "src/notetypes/place.md"
   ]
 }
