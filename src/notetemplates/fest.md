@@ -39,10 +39,12 @@ tag:
 
 ### Игровые дисциплины
 
-- спортивное «(activity::[[chgk-<% number %>-<% year %>|Что? Где? Когда?]])»;
-- «(activity::[[brain-<% number %>-<% year %>|Брейн-ринг]])»;
-- спортивная версия «(activity::[[jeopardy-<% number %>-<% year %>|Своей игры]])»;
-- «(activity::[[quartet-<% number %>-<% year %>|Эрудит-квартет]])»;
+В рамках Фестиваля прошли турниры по:
+
+- спортивному «(activity::[[chgk-<% number %>-<% year %>|Что? Где? Когда?]])» (5 туров по 15 вопросов);
+- «(activity::[[brain-<% number %>-<% year %>|Брейн-рингу]])»;
+- спортивной версии «(activity::[[jeopardy-<% number %>-<% year %>|Своей игры]])»;
+- «(activity::[[quartet-<% number %>-<% year %>|Эрудит-квартету]])»;
 - «(activity::[[multigames-<% number %>-<% year %>|Интеллектуальное многоборье]])».
 
 ### Расписание
