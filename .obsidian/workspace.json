@@ -6,7 +6,7 @@
       {
         "id": "e6caf0480d12c217",
         "type": "tabs",
-        "dimension": 57.27902946273831,
+        "dimension": 50.83932853717026,
         "children": [
           {
             "id": "05e55cd96a8b71a1",
@@ -14,6 +14,18 @@
             "state": {
               "type": "graph",
               "state": {}
+            }
+          },
+          {
+            "id": "2299abfcd1ffd9fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/events/01 (2002)/bfii-01-2002.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -29,32 +41,32 @@
             }
           },
           {
-            "id": "fd391daa670817e8",
+            "id": "66682de689ab81ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/notetemplates/team.md",
+                "file": "src/notetemplates/fest.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
-        "id": "c36451405fb31ed9",
+        "id": "e6ae13c2d75e4983",
         "type": "tabs",
-        "dimension": 42.7209705372617,
+        "dimension": 49.16067146282973,
         "children": [
           {
-            "id": "2299abfcd1ffd9fd",
+            "id": "fd391daa670817e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/teams/911.md",
+                "file": "src/notetemplates/fest.md",
                 "mode": "source",
                 "source": true
               }
@@ -89,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "chgk-irk.referata.com",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/teams/911.md",
+                "file": "src/notetemplates/fest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/teams/911.md",
+                "file": "src/notetemplates/fest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/teams/911.md"
+                "file": "src/notetemplates/fest.md"
               }
             }
           },
@@ -197,11 +209,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 421.5
+    "width": 324.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,43 +228,43 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2299abfcd1ffd9fd",
+  "active": "fd391daa670817e8",
   "lastOpenFiles": [
-    "notes/teams/911.md",
-    "src/notetemplates/team.md",
-    "src/notetypes/team.md",
-    "notes/teams/Состояние торгового счета (19 сентября 2023) (1).md",
-    "Команда.md",
-    "src/notetemplates/organization.md",
-    "src/notetemplates/person.md",
     "src/notetemplates/fest.md",
-    "notes/events/13 (2016)/bfii-13-2016.md",
-    "src/notetemplates/911.md",
-    "911.md",
-    "README.md",
-    "data/lu70284hf7bs.tmp",
-    "data/lu70284hf7bq.tmp",
-    "data/lu70284hf7bo.tmp",
-    "data/lu70284hf7bm.tmp",
-    "data/lu70284hf7bk.tmp",
-    "data/lu70284hf7bi.tmp",
-    "data/lu70284hf7bg.tmp",
-    "data/lu70284hf7be.tmp",
-    "data/lu70284hf7bc.tmp",
-    "data/lu70284hf7ba.tmp",
-    "chgk-13-2016.md",
-    "quartet-13-2016.md",
-    "notes/bfii.md",
-    "notes/events/bfii.md",
-    "notes/places/irkregion/irkutsk/rasputin-lib.md",
-    "notes/places/irkregion/irkutsk/Object-01.md",
     "notes/events/01 (2002)/bfii-01-2002.md",
-    "notes/events/01.md",
-    "src/notetypes/event.md",
-    "src/notetypes/community.md",
+    "data/lu8056ij949.tmp",
+    "data/lu8056ij947.tmp",
+    "data/lu8056ij945.tmp",
+    "data/lu8056ij943.tmp",
+    "data/lu8056ij941.tmp",
+    "data/lu8056ij93z.tmp",
+    "data/lu8056ij93x.tmp",
+    "data/lu8056ij93v.tmp",
+    "data/lu8056ij93t.tmp",
+    "data/lu8056ij93r.tmp",
+    "notes/persons/a_v_petrov.md",
     "notes/persons/AVPetrov.md",
+    "notes/map.canvas",
+    "notes/events/09 (2010)/bfii-09-2010.md",
+    "notes/events/10 (2011)/bfii-10-2011.md",
+    "notes/events/09 (2010)/bfii-09-2010-09-11.md",
+    "README.md",
+    "notes/events/05 (2006)/bfii-05-2006.md",
+    "notes/events/09 (2010)/team_jeopardy-09-2010.md",
+    "src/notetemplates/competition.md",
+    "notes/events/04 (2005)/bfii-04-2005.md",
+    "src/notetypes/event.md",
+    "intermost-09-2010.md",
+    "notes/events/13 (2016)/bfii-13-2016.md",
     "notes/places/irkregion/irkutsk/Irkutsk.md",
-    "src/notetypes/person.md",
-    "src/notetypes/place.md"
+    "notes/events/08 (2009)/bfii-08-2009.md",
+    "notes/events/14 (2017)/bfii-14-2017.md",
+    "notes/events/11 (2012)/bfii-11-2012.md",
+    "notes/events/06 (2007)/bfii-06-2007.md",
+    "notes/events/07 (2008)/bfii-07-2008.md",
+    "notes/places/irkregion/irkutsk/Object-01.md",
+    "src/notetypes/team.md",
+    "src/notetemplates/team.md",
+    "notes/teams/911.md"
   ]
 }
