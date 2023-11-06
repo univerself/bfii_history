@@ -100,48 +100,32 @@ tag:
 
 #### Абсолютный зачёт
 
-```dataview
-TABLE WITHOUT ID 
-	Результат.Зачёт AS Зачёт,
-	Результат.Место AS Место,
-	link(Участник.Участник, Участник.Название) AS Участник,
-	Участник.Город AS Город,
-	Участник.Организация AS Организация,
-	Результат.Очки AS Очки,
-	Состав
-FROM csv("data/scores.csv")
-	OR csv("data/players.csv")
-WHERE Турнир = "bfii-<% number %>-<% year %>"
-GROUP BY object(
-	"Участник", Участник, 
-	"Название", Название, 
-	"Город", Город, 
-	"Организация", Организация
-) AS Участник
-FLATTEN filter(
-	map(rows, (row) => extract(row, 
-		"Турнир", 
-		"Дисциплина", 
-		"Зачёт", 
-		"Место",
-		"Очки"
-	)),
-	(res) => res.Место
-) AS Результат
-FLATTEN join(map(
-	filter(
-		map(rows, (row) => extract(row, 
-			"Игрок", 
-			"Имя", 
-			"Фамилия"
-		)),
-		(p) => p.Игрок
-	), 
-	(p) => link(p.Игрок, p.Имя + " " + p.Фамилия)
-), ", ") AS Состав
-SORT Результат.Турнир, Результат.Зачёт, Результат.Место
-```
+<%*
+const dv = this.app.plugins.plugins["dataview"].api;
+let team_results = await tp.user.scores_by_teams(dv, item => (item.Турнир == `bfii-${number}-${year}`))
+await tp.user.add_rosters_by_teams(dv, team_results, item => (item.Турнир == `bfii-${number}-${year}`))
+await tp.user.add_detailed_scores_by_teams(dv, team_results, `data/03 (2004)/bfii-${number}-${year}.csv`) 
 
+tR += `<!-- Таблица сформирована ${tp.date.now("YYYY-MM-DDTHH:mm:ss")} -->\n\n`
+tR += dv.markdownTable(["Зачёт", "Место", "ID", "Команда", "Город", "Организация", "Состав", "Многоборье", "Брейн-ринг", "Большая игра", "Всего"], 
+	dv.array(
+		tp.user.flatscores(team_results)
+	).sort(res => res.Место)
+	.map(item => [
+		item.Зачёт, 
+		item.Место, 
+		`${item.IDteam?`[${item.IDteam}](https://rating.chgk.info/teams/${item.IDteam})`:""}`,
+		`[[${item.Команда}|${item.Название}]]`, 
+		item.Город,
+		item.Организация,
+		item.Состав.map(p=>`[[${p.Игрок}|${p.Имя} ${p.Фамилия}]]`).join(", "),
+		item["1. Многоборье"],
+		item["2. Брейн-ринг"],
+		item["3. Большая игра"],
+		item.Очки
+	])
+);
+%>
 #### Что? Где? Когда?
 
 - спортивное «(activity::[[chgk-<% number %>-<% year %>|Что? Где? Когда?]])»;
