@@ -34,3 +34,7 @@ price:: {"type":"Number","options":{}}
 
 links:: {"type":"Input","options":{}}
 references::  {"type":"Input","options":{}}
+
+winner:: {"type":"MultiFile","options":{}}
+silver-medalist:: {"type":"MultiFile","options":{}}
+bronze-medalist:: {"type":"MultiFile","options":{}}

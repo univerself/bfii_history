@@ -1,8 +1,10 @@
-async function main (dv, team_results, csv_path) {
-    const csv = await dv.io.csv(csv_path)
-    const scores = csv
-	.groupBy(item => item.Участник)
-	.forEach(item => {
+async function main (dv, team_results, csv_path, _filter = undefined) {
+    let scores = await dv.io.csv(csv_path)
+	if(_filter) {
+		scores = scores.where(_filter)
+	}
+    scores = scores.groupBy(item => item.Участник)
+	scores.forEach(item => {
 		let team_id = item.key
 		let team_res = team_results[team_id]
 		if(!team_res) {

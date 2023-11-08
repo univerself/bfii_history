@@ -18,6 +18,7 @@ aliases:
 - очередной игровой день на <% number %> БФИИ
 - очередной игровой день БФИИ-<% year %>
 - очередной игровой день на БФИИ-<% year %>
+links:
 tags:
   - chronicle/один_день_бфии
 ---
@@ -32,5 +33,9 @@ tags:
 ![[brain-<% number %>-<% year %>#Хроника|n-h3]]
 
 ![[chgk-<% number %>-<% year %>#Хроника|n-h3]]
+
+![[quartet-<% number %>-<% year %>#Хроника|n-h3]]
+
+![[jeopardy-<% number %>-<% year %>#Хроника|n-h3]]
 
 ![[bfii-<% number %>-<% year %>#Выход на вышестоящие турниры|n-h3]]

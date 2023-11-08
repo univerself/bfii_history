@@ -1,6 +1,6 @@
 ---
-aliases:
-- 
+aliases: 
+links: 
 tags:
   - place
 ---

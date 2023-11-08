@@ -1,4 +1,4 @@
-async function main (dv, team_results, _filter) {
+async function main (dv, team_results, _filter, add_new_teams = true) {
     const players_csv = await dv.io.csv("data/players.csv")
     const players = players_csv
 	.where(_filter)
@@ -7,6 +7,7 @@ async function main (dv, team_results, _filter) {
 		let team_id = item.key
 		let team_res = team_results[team_id]
 		if(!team_res) {
+			if(!add_new_teams) return
 			team_res = dv.array([{
 				Команда: team_id,
 				Зачёт: "", 

@@ -10,6 +10,7 @@ aliases:
 - "<% name %> (<% city %>)"
 - "<% name %>"
 teamid: <% teamid %>
+links:
 tags: 
   - community/команда
 ---
