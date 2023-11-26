@@ -1,0 +1,42 @@
+SELECT
+    printf('[[%s-%02d-%s|%s]]', t.slug, c.[event-id],  substr(e.startdate, 1, 4), IIF(
+        s.place_from = s.place_to, 
+        s.place_from, 
+        printf('%s-%s', s.place_from, s.place_to)
+    )) AS Место,
+    IIF(p."team-toursite-id" IS NULL, '', printf('[%d](https://rating.chgk.info/teams/%d)', p."team-toursite-id", p."team-toursite-id")) AS ID,
+    printf('[[%s|%s]]', t.slug,p.name) AS Команда,
+    p.city AS Город,
+    p.organization AS Организация,
+    GROUP_CONCAT(IIF(
+        r.id IS NULL, NULL,
+        printf('<li>[[%s|%s %s]]', persons.slug, r.firstname, r.lastname))
+    ) AS Состав,
+    MAX(IIF(c.activity = 'brain', s.points, NULL)) AS "Брейн-ринг",
+    MAX(IIF(c.activity = 'multigames', s.points, NULL)) AS Многоборье,
+    MAX(IIF(c.activity = 'chgk', s.points, NULL)) AS "Большая игра",
+    MAX(IIF(c.ispartof IS NULL, s.points, NULL)) AS Всего
+FROM scores AS s
+LEFT JOIN participations AS p
+ON p.id = s."team-participant-id"
+INNER JOIN competitions AS c
+ON 
+    c.id = s."competition-id"
+    AND (
+        c.id = 4
+        OR c.ispartof = 4
+    )
+LEFT JOIN teams AS t
+ON p."team-id" = t.id
+LEFT JOIN rosters AS r
+ON 
+    r."team-id" = p.id
+    AND c.ispartof IS NULL
+LEFT JOIN persons
+ON persons.id = r."person-id"
+LEFT JOIN events AS e
+ON e.[number-in-series] = c.[event-id]
+GROUP BY
+    p.id
+ORDER BY 
+    s.place_from
