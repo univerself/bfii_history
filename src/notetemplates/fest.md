@@ -20,6 +20,7 @@ aliases:
 - <% number %>-й БФИИ
 - <% number %> БФИИ
 - БФИИ-<% year %>
+- <% number %> (римская) (<% year %>)
 - <% number %> (<% year %>)
 links: 
 startdate:
@@ -112,31 +113,6 @@ tag:
 
 ###### Таблица результатов в студенческой категории
 
-<%*
-const dv = this.app.plugins.plugins["dataview"].api;
-let team_results = await tp.user.scores_by_teams(dv, item => ((item.Турнир == `bfii-${number}-${year}`) && (item.Зачёт== "Студенческий")))
-await tp.user.add_rosters_by_teams(dv, team_results, item => (item.Турнир == `bfii-${number}-${year}`), false)
-await tp.user.add_detailed_scores_by_teams(dv, team_results, `data/${number} (${year})/bfii-${number}-${year}.csv`, item => (item.Зачёт== "Студенческий")) 
-
-tR += `<!-- Таблица сформирована ${tp.date.now("YYYY-MM-DDTHH:mm:ss")} -->\n\n`
-tR += dv.markdownTable(["Место", "ID", "Команда", "Город", "Организация", "Состав", "Многоборье", "Брейн-ринг", "Большая игра", "Всего"], 
-	dv.array(
-		tp.user.flatscores(team_results)
-	).sort(res => res.Место)
-	.map(item => [
-		item.Место, 
-		`${item.IDteam?`[${item.IDteam}](https://rating.chgk.info/teams/${item.IDteam})`:""}`,
-		`[[${item.Команда}|${item.Название}]]`, 
-		item.Город,
-		item.Организация,
-		item.Состав.map(p=>`[[${p.Игрок}|${p.Имя} ${p.Фамилия}]]`).join(", "),
-		item["1. Многоборье"],
-		item["2. Брейн-ринг"],
-		item["3. Большая игра"],
-		item.Очки
-	])
-);
-%>
 ##### Школьная категория
 
 ###### Победитель абсолютного зачёта в школьной категории
@@ -147,31 +123,6 @@ tR += dv.markdownTable(["Место", "ID", "Команда", "Город", "О�
 
 ###### Таблица результатов в школьной категории
 
-<%*
-dv = this.app.plugins.plugins["dataview"].api;
-team_results = await tp.user.scores_by_teams(dv, item => ((item.Турнир == `bfii-${number}-${year}`) && (item.Зачёт== "Школьный")))
-await tp.user.add_rosters_by_teams(dv, team_results, item => (item.Турнир == `bfii-${number}-${year}`), false)
-await tp.user.add_detailed_scores_by_teams(dv, team_results, `data/${number} (${year})/bfii-${number}-${year}.csv`, item => (item.Зачёт== "Школьный")) 
-
-tR += `<!-- Таблица сформирована ${tp.date.now("YYYY-MM-DDTHH:mm:ss")} -->\n\n`
-tR += dv.markdownTable(["Место", "ID", "Команда", "Город", "Организация", "Состав", "Многоборье", "Брейн-ринг", "Большая игра", "Всего"], 
-	dv.array(
-		tp.user.flatscores(team_results)
-	).sort(res => res.Место)
-	.map(item => [
-		item.Место, 
-		`${item.IDteam?`[${item.IDteam}](https://rating.chgk.info/teams/${item.IDteam})`:""}`,
-		`[[${item.Команда}|${item.Название}]]`, 
-		item.Город,
-		item.Организация,
-		item.Состав.map(p=>`[[${p.Игрок}|${p.Имя} ${p.Фамилия}]]`).join(", "),
-		item["1. Многоборье"],
-		item["2. Брейн-ринг"],
-		item["3. Большая игра"],
-		item.Очки
-	])
-);
-%>
 #### Лучшие игроки и команды
 
 ##### Лучшие во взрослой категории
@@ -221,7 +172,7 @@ tR += dv.markdownTable(["Место", "ID", "Команда", "Город", "О�
 
 Города (region::[[Irkutsk region|Иркутской области]]):
 
-- (city::[[Irkutsk|Иркутск]])
+- (city::[[irkutsk|Иркутск]])
 
 Команды и игроки из других регионов:
 

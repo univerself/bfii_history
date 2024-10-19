@@ -30,37 +30,11 @@ tag:
 ---
 # <% firstname %> <% middlename %> <% lastname %>
 
-## Главное
-
 (occupation:: ) в составе (ispartof:: )
 
-## Участие в фестивале
-
-### В составе команд
-
-#### Игрок
-
-```dataview 
-TABLE WITHOUT ID 
-	file.link AS Команда,
-	desc AS Описание
-FROM "notes/teams" 
-WHERE contains(player, this.file.link)
+```{.include shift-heading-level-by=1}
+notes/events/_/teams/_/<% fname %>--.md
 ```
-
-#### Тренер или руководитель
-
-### Организационное
-
-#### Член оргкомитета
-
-#### Почётный гость
-
-#### Ведущий
-
-#### Помощник
-
-### Подготовка вопросов
 
 ## Биография
 

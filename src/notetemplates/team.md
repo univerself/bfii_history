@@ -16,30 +16,19 @@ tags:
 ---
 # <% name %> (<% city %>)
 
-## Главное
-
 (type::[[teams|Команда]]) клуба (ispartof:: ) (city::[[<% city %>]]).
 
 ## Состав
 
-## Результаты
+## Участие в фестивалях
 
-### Награды
+```{.include shift-heading-level-by=1}
+notes/events/_/teams/<% fname %>/<% fname %>--.md
+```
 
-## История
+## Общая справка
 
 Основана (establisheddate:: ) в (establishedplace:: ) (closeddate:: ), (closedplace:: )
 
-### Заметки
-
-## Справка и навигация
-
 (links::[Страница на турнирном сайте](https://rating.chgk.info/teams/<% teamid %>))
 
-### География
-
-Часть света: (continent::)
-Страны: (country::)
-Регионы и территории: (region::)
-
-## Дополнительно

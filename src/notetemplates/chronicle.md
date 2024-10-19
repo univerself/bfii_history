@@ -22,20 +22,60 @@ links:
 tags:
   - chronicle/один_день_бфии
 ---
+## <% number %> (римская) Байкальский фестиваль интеллектуальных игр
+
  лет назад,  года, начался/прошёл/завершился <% number %> (римская) Байкальский фестиваль интеллектуальных игр.
 
+## География участников
+
+![подпись](media/.JPG)
+
+::: notes
 ![[bfii-<% number %>-<% year %>#Краткие сведения о географии участников|n-h3]]
+:::
 
+## Многоборье
+
+::: notes
 ![[multigames-<% number %>-<% year %>#Проведение|n-h4]]
-
 ![[multigames-<% number %>-<% year %>#Призёры|n-h4]]
+:::
 
-![[brain-<% number %>-<% year %>#Хроника|n-h3]]
+## Брейн-ринг
 
-![[chgk-<% number %>-<% year %>#Хроника|n-h3]]
+::: notes
+![[speedgame-<% number %>-<% year %>#Хроника|n-h3]]
+:::
 
+## ЧГК
+
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table:  Demonstration of simple table syntax.
+
+
+::: notes
+![[maingame-<% number %>-<% year %>#Хроника|n-h3]]
+:::
+
+## Квартет
+
+::: notes
 ![[quartet-<% number %>-<% year %>#Хроника|n-h3]]
+:::
 
+## Своя игра
+
+::: notes
 ![[jeopardy-<% number %>-<% year %>#Хроника|n-h3]]
+:::
 
+## Выход на другие турниры
+
+::: notes
 ![[bfii-<% number %>-<% year %>#Выход на вышестоящие турниры|n-h3]]
+:::
